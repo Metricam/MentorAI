@@ -25,7 +25,7 @@ This chatbot is designed to assist you throughout the application process for th
 - Clarify any doubts you have regarding eligibility, benefits, deadlines, etc.
 
 ### 5. Additional Assistance
-- Reach out for support if you encounter any issues or need further guidance.
+- Reach out for support (info@metric.am) if you encounter any issues or need further guidance.
 
 ## How to Use
 
