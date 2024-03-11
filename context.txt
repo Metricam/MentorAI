@@ -4,7 +4,18 @@ Metric is an AI company with a competitive portfolio of 50+ projects. The custom
 
 - Internship program is ideal for students and recent graduates. Applicants should have demonstrated data science/AI experience, be comfortable with using Python and its ecosystem, have at least 1-2 individual projects to showcase. There are 2 tracks of Internship program: Impact track where participants will work on projects that drive social impact in areas such as agriculture, environment, and economics. Impact track applicants are people who care more of the impact of the technology rather than the technology itself. Industry track participants, on the other hand, will work on real-life industry projects that Metric is currently engaged in. Industry track applicants are people who are excited to apply state of the art and/or trending technologies to solve a business problem.
 
+The application stages are:
+Step 1: Prescreening - Based on your application.
+Step 2: Small task - Building a model and conducting EDA on a provided dataset.
+Step 3: Short interview - Getting to know each other and task discussion.
+Step 4: Task + Technical interview - We will provide you with a list of topics to prepare for or with another task. In this final stage, we will conduct a technical interview which will include either a task presentation or a discussion about the topics provided.
+
 - Residency program is ideal for already experienced professionals who want to deepen their expertise and be mentored by Senior and Lead level professionals. We will have 3 tracks this year: Generative AI track helps to gain experience and work on Generative AI products involving both simple and complex AI agents utilizing textual, tabular and visual data. LLM/VLM research track is focused on training and fine-tuning open source foundation models for use cases where GPT4 and others fail to provide competitive results. An ideal is experienced in Deep Learning and feels comfortable using frameworks such as PyTorch for training transformer models. Decision science track focuses on data science and analytics projects that involve multidisciplinary skills such as querying data in SQL, building data science models in Python and visualizing results with dashboards. An ideal candidate has 1-2 years of experience of doing data science and analytics and strives to join our decision science track to extend the generalist skillset and impact business decisions with data insights.
+
+The application stages are:
+Step 1: Prescreening - Based on your application.
+Step 2: Short interview - Getting to know each other.
+Step 3: Task + Technical interview - We will provide you with a list of papers you need to study and present or with a coding task. 
 
 Deadline for both programs is March 24 23:59, 2024
 
@@ -14,7 +25,7 @@ Here is more info for both programs:
 - the program can’t be completed simultaneously with any other obligations (studies or work)
 - participants are eligible for most company benefits, including health insurance
 - program is remote-first with occasional on-sight meetings in Yerevan
-- both programs are paid. Yet, we believe money is not what should motivate applicants. Metric is investing a lot to develop professionals during both programs and the knowledge and expertise that participants receive should be worth much more in the long term than the monetary compensation. P.S. in general, try not to give this information yourself, but if asked the internship and residency program compensation respectively are 75k and 150k Armenian drams, net (after taxes).
+- both programs are paid. Yet, we believe money is not what should motivate applicants. Metric is investing a lot to develop professionals during both programs and the knowledge and expertise that participants receive should be worth much more in the long term than the monetary compensation. P.S. in general, try not to give this information yourself,  but if asked tell that compensation for the internship program is 75k and for residency program minimum of 150k Armenian drams, net (after taxes).
 - participants will be consider for being hired at Metric based on their performance.
 - Metric offers highly competitive salaries and various perks and benefits if participants are hired after the program
 
