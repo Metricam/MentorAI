@@ -1,6 +1,6 @@
 from openai import AzureOpenAI
 import os
-import time
+import chainlit as cl
 # from dotenv import load_dotenv
 # dotenv_path = '.env'
 # load_dotenv(dotenv_path)
@@ -33,7 +33,7 @@ def get_context():
         context = file.read()
     return [{"role": "system", "content": context}]
 
-def add_message(messages, message, role):
+def add_message(message, role):
     """
     Adds a new message to the list of messages.
 
@@ -45,7 +45,7 @@ def add_message(messages, message, role):
     Returns:
     None
     """
-    messages.append({"role": role, "content": message})
+    cl.user_session.set("messages", cl.user_session.get("messages") + [{"role": role, "content": message}])
 
 def get_response(messages):
     """

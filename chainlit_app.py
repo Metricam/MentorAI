@@ -1,18 +1,17 @@
 import chainlit as cl
-import time
 from utils import get_initial_message, get_context, add_message, get_response
-
-messages = get_context()
 
 # chainlit run chainlit_app.py -w
 
 @cl.on_chat_start
 async def start():
-    
+    # Get the initial messages list
+    cl.user_session.set("messages", get_context())
+     
     initial_message = get_initial_message()
 
     # Add ChatGPT's response to the messages list
-    add_message(messages, initial_message, "assistant")
+    add_message(initial_message, "assistant")
 
     await cl.Message(
         content=initial_message,
@@ -21,14 +20,18 @@ async def start():
 
 @cl.on_message
 async def main(message: cl.Message):
+    
+    print(len(cl.user_session.get("messages")))
+    print(cl.user_session.get("messages"))
     # Initialize the ChainLit message (for streaming purposes)
     msg = cl.Message(content="")
 
-    # Add users message to the messages list
-    add_message(messages, message.content, "user")
+
+    # Add ChatGPT's response to the messages list
+    add_message(message.content, "user")
 
     # Get a response from ChatGPT
-    chat_response = get_response(messages)
+    chat_response = get_response(cl.user_session.get("messages"))
     chat_message = ""
 
     # Stream the response from ChatGPT
@@ -43,7 +46,7 @@ async def main(message: cl.Message):
             await msg.stream_token(delta.content)
 
     # Add ChatGPT's response to the messages list
-    add_message(messages, chat_message, "assistant")
+    add_message(chat_response, "assistant")
 
     # Send a response back to the user
     await msg.send()
